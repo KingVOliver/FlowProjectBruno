@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClickToBuymoney : MonoBehaviour
 {
-    public int CurrencyAmount = 10;  
+    [SerializeField] public int CurrencyAmount = 10;  
     
 
      

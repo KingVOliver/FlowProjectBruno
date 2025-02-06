@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 public class InventoryManager : MonoBehaviour
 {
-    public static InventoryManager instance;
+    [SerializeField] public static InventoryManager instance;
 
-    public List<Item> potions = new List<Item>();
-    public Image potionSlotUI;
-    public Text potionCountUI;
+    [SerializeField] public List<Item> potions = new List<Item>();
+    [SerializeField] public Image potionSlotUI;
+    [SerializeField] public Text potionCountUI;
 
     private void Awake()
     {

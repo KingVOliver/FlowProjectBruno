@@ -1,12 +1,14 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ClickableItem : MonoBehaviour
 {
-    public Item itemData; // Reference to item data
+   [SerializeField]  public Item itemData;
 
     private void OnMouseDown()
     {
         EquipmentManager.instance.EquipItem(itemData);
-        Destroy(gameObject); // Remove the item from the world
+        Destroy(gameObject);
     }
 }

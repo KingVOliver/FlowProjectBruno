@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MoneyDisplay : MonoBehaviour
 {
-    private Text text;
+   private Text text;
 private void Start ()
 {
 text = GetComponent<Text>();

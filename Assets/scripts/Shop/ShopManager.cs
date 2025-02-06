@@ -6,15 +6,15 @@ using UnityEngine.UI;
 public class ShopManager : MonoBehaviour
 {
 
-    public GameObject shopPanel; 
-    public Text currencyText;
-    public int playerCurrency = 100; 
+    [SerializeField] public GameObject shopPanel; 
+    [SerializeField] public Text currencyText;
+    [SerializeField] public int playerCurrency = 100; 
 
     
-    public int HealthPrice = 50;
-    public int AtackPrice = 30;
+    [SerializeField] public int HealthPrice = 10;
+    [SerializeField] public int AtackPrice = 10;
 
-    public int SpeedPrice = 20;
+    [SerializeField] public int SpeedPrice = 10;
 
     void Start()
     {
@@ -22,14 +22,8 @@ public class ShopManager : MonoBehaviour
         shopPanel.SetActive(false);
         UpdateCurrencyDisplay();
     }
-public const string Currency = "Currency";
-    public static int money = 0;
-    public void AddMoney(int amount)
-    {
-        money += amount;
-    }
 
-  
+   
     public void UpdateCurrencyDisplay()
     {
         currencyText.text = "Currency: " + playerCurrency.ToString();

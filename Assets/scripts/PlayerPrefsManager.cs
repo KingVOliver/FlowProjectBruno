@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PlayerPrefsManager : MonoBehaviour
 {
-    public const string Currency = "Currency";
-    public static int money = 0;
+    [SerializeField] public const string Currency = "Currency";
+    [SerializeField] public static int money = 0;
     public void AddMoney(int amount)
     {
         money += amount;

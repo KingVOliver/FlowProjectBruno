@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class EquipmentManager : MonoBehaviour
 {
-    public static EquipmentManager instance;
-    public Image equippedItemIcon; // UI icon to display equipped item
+    [SerializeField] public static EquipmentManager instance;
+    [SerializeField] public Image equippedItemIcon; // UI icon to display equipped item
 
     private void Awake()
     {

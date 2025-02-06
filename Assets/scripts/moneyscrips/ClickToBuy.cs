@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class ClickToBuy : MonoBehaviour
 {
-    public int moneyAmount = 10;  
-    public Camera playerCamera;
-    public GameObject shopObject;
-    public GameObject CloseObject;
+    [SerializeField] public int moneyAmount = 10;  
+   [SerializeField]  public Camera playerCamera;
+   [SerializeField]  public GameObject shopObject;
+   [SerializeField]  public GameObject CloseObject;
 
-     public ShopManager shopManager;
+   [SerializeField]   public ShopManager shopManager;
 
     private void OnMouseDown()
     {

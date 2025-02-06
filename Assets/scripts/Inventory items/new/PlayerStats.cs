@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
-    public static PlayerStats instance;
+    [SerializeField] public static PlayerStats instance;
 
-    public int maxHealth = 100;
-    public int currentHealth;
+    [SerializeField] public int maxHealth = 100;
+    [SerializeField] public int currentHealth;
 
-    public int maxAtack = 50;
-    public int currentAtack;
+    [SerializeField] public int maxAtack = 50;
+    [SerializeField] public int currentAtack;
 
-    public float speed = 5f;
-    private float defaultSpeed;
+    [SerializeField] public float speed = 5f;
+    [SerializeField] private float defaultSpeed;
 
-    public Slider healthBar;
-    public Slider atackBar;
+    [SerializeField] public Slider healthBar;
+    [SerializeField] public Slider atackBar;
 
     private void Awake()
     {
